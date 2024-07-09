@@ -16,6 +16,7 @@ export const initialStage = {
         // client.on("ready", () => {
         // console.log("Client is Ready");
         // });
+        
         const msg = `
         👋 Olá, como vai?
         Eu sou a Bia, a *assistente virtual* da Bia Cosmetico.\n
@@ -25,6 +26,8 @@ export const initialStage = {
         2. - VERIFICAR TAXA DE ENTREGA
         3. - FALAR COM ATENDENTE
         `
-        await WebWhats.send({to: from, msg})
+       
+        await WebWhats(from, msg)
+        
     },
 }

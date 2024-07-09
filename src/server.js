@@ -31,6 +31,7 @@ const main = async () => {
                 from: message.from,
                 message: message.body,
             })
+            client.sendMessage(message.from, 'Ola')
         })
         
         client.initialize();
